@@ -5,7 +5,7 @@
 ## 1. Basic Scanning Commands
 •   Default Scan (Basic Ping & Port Scan)
 
-nmap <target>       Performs a basic scan on the top 1000 TCP ports e.g nmap scanme.nmap.org
+nmap xxtarget       Performs a basic scan on the top 1000 TCP ports e.g nmap scanme.nmap.org
 
 •   Scan Multiple Targets
 
