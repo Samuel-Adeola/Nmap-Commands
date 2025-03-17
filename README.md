@@ -5,10 +5,15 @@
 
 ## 1. Basic Scanning Commands
 •   Default Scan (Basic Ping & Port Scan)
+
 nmap <target>       Performs a basic scan on the top 1000 TCP ports e.g nmap scanme.nmap.org
+
 •   Scan Multiple Targets
+
 nmap <target1> <target2> <target3>  Example: nmap 192.168.1.1 192.168.1.2
+
 To scan an entire subnet:  nmap 192.168.1.0/24
+
 To scan a list of hosts from a file:  nmap -iL targets.txt
 
 
