@@ -5,11 +5,12 @@
 ## 1. Basic Scanning Commands
 •   Default Scan (Basic Ping & Port Scan)
 
-nmap [target]       Performs a basic scan on the top 1000 TCP ports e.g nmap scanme.nmap.org
+nmap [target]       
+Performs a basic scan on the top 1000 TCP ports e.g nmap scanme.nmap.org
 
 •   Scan Multiple Targets
-
-nmap <target1> <target2> <target3>  Example: nmap 192.168.1.1 192.168.1.2
+nmap [target1] [target2] [target3] 
+Example: nmap 192.168.1.1 192.168.1.2
 
 To scan an entire subnet:  nmap 192.168.1.0/24
 
@@ -19,26 +20,26 @@ To scan a list of hosts from a file:  nmap -iL targets.txt
 ## 2. Port Scanning Techniques
 •   TCP SYN Scan (Stealth Scan)
 
-nmap -sS <target>   Performs a stealthy scan that does not complete the TCP handshake and useful for evading detection by firewalls.
+nmap -sS [target]   
+Performs a stealthy scan that does not complete the TCP handshake and useful for evading detection by firewalls.
 
 •   TCP Connect Scan
-
-nmap -sT <target>   Completes the full TCP handshake (slower and noisier).
+nmap -sT [target]   
+Completes the full TCP handshake (slower and noisier).
 
 •   UDP Scan
-
-nmap -sU <target>   Scans UDP ports (useful for detecting services like DNS, SNMP, and DHCP).
+nmap -sU [target]   
+Scans UDP ports (useful for detecting services like DNS, SNMP, and DHCP).
 
 •   Comprehensive TCP+UDP Scan
-
-nmap -sS -sU -p- <target>   Scans all TCP and UDP ports for a full network assessment.
+nmap -sS -sU -p- [target]
+Scans all TCP and UDP ports for a full network assessment.
 
 
 ## 3. Port Specification & Scan Range
-
 •   Scan Specific Ports
-
-nmap -p 22,80,443 <target>  Scans only ports 22 (SSH), 80 (HTTP), and 443 (HTTPS).
+nmap -p 22,80,443 <target>  
+Scans only ports 22 (SSH), 80 (HTTP), and 443 (HTTPS).
 
 •   Scan All 65535 Ports
 
